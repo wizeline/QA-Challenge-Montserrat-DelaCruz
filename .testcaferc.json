@@ -1,0 +1,9 @@
+{
+    "pageLoadTimeout":    200000,
+    "pageRequestTimeout": 1000000,
+    "ajaxRequestTimeout": 6000000,
+    "browserInitTimeout": 18000000,
+    "selectorTimeout": 8000,
+    "assertionTimeout": 2000,
+    "speed":1
+}
