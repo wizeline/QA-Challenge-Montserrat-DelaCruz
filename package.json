@@ -1,0 +1,23 @@
+{
+  "name": "qa-challenge-montserrat-delacruz",
+  "version": "1.0.0",
+  "description": "QA Buddy Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizeline/QA-Challenge-Montserrat-DelaCruz.git"
+  },
+  "author": "Montserrat De La Cruz Manznanilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wizeline/QA-Challenge-Montserrat-DelaCruz/issues"
+  },
+  "homepage": "https://github.com/wizeline/QA-Challenge-Montserrat-DelaCruz#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "testcafe": "^1.17.0"
+  }
+}
