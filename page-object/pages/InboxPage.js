@@ -1,8 +1,7 @@
-import { Selector, t } from 'testcafe';
+import { Selector, t } from 'testcafe'
 
 class InboxPage{
 
-    
     constructor() {
         this.taskSelector = Selector('.list_holder .items .task_list_item')
         this.taskAlert = Selector('.text_holder')
@@ -15,7 +14,6 @@ class InboxPage{
         this.titlesArray = []
         this.timezone_Alert = Selector('#GB_window')
         this.timezone_closeBtn = Selector('.g_header .close')
-        
     }
 
     async getTask(taskTitle){
@@ -27,7 +25,6 @@ class InboxPage{
             .typeText(this.taskTitle, title, {paste:true, replace:true })
             .typeText(this.taskDescription, desc, {paste:true, replace:true })
             .click(this.addTaskBtn)
-
     }
    
     async closeTimezoneAlert() {
@@ -38,19 +35,18 @@ class InboxPage{
 
     async addTask(number, title, desc) {
         if(number ===1){
-            await t.click(this.pulsBtn);
-            this.titlesArray.push(title);
-            await this.fillTaskForm(title,desc);
+            await t.click(this.pulsBtn)
+            this.titlesArray.push(title)
+            await this.fillTaskForm(title,desc)
         }
         else{
-            await this.fillTaskForm(title,desc);
+            await this.fillTaskForm(title,desc)
         }
        
     }
-    
 
     async addMultipleTasks(number, baseTitle, desc) {
-        await t.click(this.pulsBtn);
+        await t.click(this.pulsBtn)
         for (var i = 0; i < number; i++){
             var title = baseTitle+(i+1)
             this.titlesArray.push(title)
@@ -58,7 +54,5 @@ class InboxPage{
         }
         
     }
-
-    
 }
 export default new InboxPage()

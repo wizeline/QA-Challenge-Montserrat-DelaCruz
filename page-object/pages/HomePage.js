@@ -1,13 +1,13 @@
-import { Selector,t } from 'testcafe';
+import { Selector,t } from 'testcafe'
 
 class Homepage{
     constructor(){
-        this.loginLink=Selector('a').withText('Log in');
+        this.loginLink=Selector('a').withText('Log in')
     }
 
     async navigateToLoginPage(){
         await t
-            .click(this.loginLink);
+            .click(this.loginLink)
     }
 }
-export default new Homepage();
+export default new Homepage()

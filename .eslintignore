@@ -1,0 +1,4 @@
+#Allure reports
+allure/
+#HtmlExtra Reports
+results/
