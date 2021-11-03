@@ -3,12 +3,6 @@ pipeline{
     tools { nodejs 'node' }
     stages{
 
-        stage('Branch change'){
-            steps{
-                sh 'git checkout develop'
-            }
-        }
-
         stage('Install dependencies'){
             steps{
                 sh 'npm run deleteReports'
