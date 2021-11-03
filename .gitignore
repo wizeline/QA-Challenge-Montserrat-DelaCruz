@@ -103,8 +103,14 @@ dist
 # TernJS port file
 .tern-port
 
+# Alure Reports
+allure/
+
 #package-lock file
 package-lock.json
 
 #HtmlExtra Reports
 results/
+
+#Screenshot folder
+screenshots/
