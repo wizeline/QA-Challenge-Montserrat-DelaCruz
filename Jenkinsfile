@@ -30,7 +30,7 @@ pipeline{
                 withSonarQubeEnv(installationName: 'sq1'){
                     echo "${scanner_home}"
                     sh "${scanner_home}/bin/sonar-scanner \
-                     -Dsonar.projectKey=QA-Buddy-Challenge"
+                     -Dsonar.projectKey=QA-Challenge"
 
                 }
             }
