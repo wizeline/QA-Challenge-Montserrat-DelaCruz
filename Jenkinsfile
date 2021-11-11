@@ -46,6 +46,7 @@ pipeline{
     post{
         aborted{
             slackSend color: "#f3f024", message: "*Build Aborted*\n Job: ${env.JOB_NAME}\n Build: ${env.BUILD_NUMBER}\n URL: ${env.BUILD_URL}"        }
+        }
         failure{
             slackSend color: "#F50407", message: "*Build Failed*\n Job: ${env.JOB_NAME}\n Build: ${env.BUILD_NUMBER}\n URL: ${env.BUILD_URL}"
             slackUploadFile "results/Backend_report.html"
