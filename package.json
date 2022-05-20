@@ -8,6 +8,7 @@
     "test:headless": "testcafe chrome:headless ./tests/frontend/*.js -s takeOnFails=true --reporter allure",
     "test-browser":"testcafe 'browserstack:firefox@39.0:Windows 10' ./tests/frontend/*.js -s takeOnFails=true --reporter allure",
     "backendTests": "newman run ./tests/backend/Todoist.collection.json -e ./tests/backend/Todoist.environment.json -r htmlextra --reporter-htmlextra-export ./results/Backend_report.html",
+    "beTests":"newman run ./tests/backend/Todoist.collection.json -e ./tests/backend/Todoist.environment.json -r cli,json",
     "allureReport": "allure generate allure/allure-results --clean -o allure/allure-report && allure open allure/allure-report",
     "deleteReports": "rm -rf ./allure ./results",
     "lint": "eslint ./"
