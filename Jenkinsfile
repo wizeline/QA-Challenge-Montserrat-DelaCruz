@@ -6,7 +6,9 @@ pipeline{
         stage('Install dependencies'){
             steps{
                 sh 'npm run deleteReports'
+                sh 'npm install -S newman-reporter-htmlextra'
                 sh 'npm install'
+
             }
         }
         
